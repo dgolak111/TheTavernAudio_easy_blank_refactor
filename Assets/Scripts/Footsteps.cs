@@ -137,7 +137,7 @@ public class Footsteps : MonoBehaviour
     private void PlaySurfaceSound(FMOD.Studio.EventInstance soundInstance, EventReference eventRef, string surfaceTag)
     {
         // Zmienna przechowująca parametr FMOD. Domyślnie ustawiona na null/pusty string.
-        string surfaceParameter = null; 
+        string stone = null; 
 
         // Instrukcja SWITCH do mapowania Tagu na Parametr FMOD.
         switch (surfaceTag)
@@ -145,26 +145,26 @@ public class Footsteps : MonoBehaviour
             case "Stone":
             case "Inside_stone":
             case "Outside": // "Outside" również używa parametru "Stone"
-                surfaceParameter = "Stone";
+                stone = "stone";
                 break;
             
             case "Wood":
             case "Inside_wood":
-                surfaceParameter = "Wood";
+                stone = "wood";
                 break;
 
             case "Bed":
-                surfaceParameter = "Bed";
+                stone = "Bed";
                 break;
         }
 
         // Jeśli znaleziono pasujący parametr, odtwórz dźwięk.
-        if (surfaceParameter != null)
+        if (stone != null)
         {
             soundInstance = RuntimeManager.CreateInstance(eventRef);
             soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform));
             // Ustawia parametr FMOD na podstawie ustalonej wartości.
-            soundInstance.setParameterByNameWithLabel("Footsteps_surface", surfaceParameter); 
+            soundInstance.setParameterByNameWithLabel("footsteps", stone); 
             soundInstance.start();
             soundInstance.release();
         }
