@@ -98,10 +98,10 @@ MonoBehaviour:
   Path: tavern/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639114143292288887
+  lastModified: 639138414794236051
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1206
   Exists: 1
 --- !u!114 &-1105222027797948317
 MonoBehaviour:
@@ -145,10 +145,10 @@ MonoBehaviour:
   Path: tavern/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639114143292278802
+  lastModified: 639138414794215995
   FileSizes:
   - Name: Desktop
-    Value: 5600160
+    Value: 5601280
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -171,13 +171,14 @@ MonoBehaviour:
   - {fileID: -1105222027797948317}
   - {fileID: -7169996569034254629}
   - {fileID: 3721985835474925088}
+  - {fileID: 8646866092255899387}
   EditorParameters: []
   MasterBanks:
   - {fileID: -415386215594645759}
   StringsBanks:
   - {fileID: -4491996526687986066}
   cacheVersion: 131859
-  cacheTime: 639114143292288887
+  cacheTime: 639138414794236051
   SerializableEventsDict:
   - key: event:/amb-fire
     index: 0
@@ -189,6 +190,8 @@ MonoBehaviour:
     index: 3
   - key: event:/music
     index: 4
+  - key: snapshot:/saswas
+    index: 5
 --- !u!114 &2300336107547874072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,3 +272,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 119968
+--- !u!114 &8646866092255899387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/saswas
+  m_EditorClassIdentifier: 
+  Path: snapshot:/saswas
+  Guid:
+    Data1: -78423192
+    Data2: 1192875355
+    Data3: -1302040434
+    Data4: 66842615
+  Banks:
+  - {fileID: -415386215594645759}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0

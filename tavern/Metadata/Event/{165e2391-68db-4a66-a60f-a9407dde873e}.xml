@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{165e2391-68db-4a66-a60f-a9407dde873e}">
+		<property name="color">
+			<value>Magenta Light 2</value>
+		</property>
 		<property name="name">
 			<value>amb-forest</value>
 		</property>
@@ -46,6 +49,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{1a924133-c6b0-4ec6-b36a-f80d8180f681}">
+		<property name="color">
+			<value>Magenta Light 2</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{dc4e7263-3b44-4e49-85ee-a4260382312b}</destination>
 		</relationship>
@@ -53,7 +59,7 @@
 			<destination>{f6f10c18-f9bb-45b8-8e22-f696786b3979}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{a127afef-a3a6-4cd5-a0d8-61511fa7096f}</destination>
+			<destination>{63ad7f37-1df0-47ef-a4ab-d19ddd0c86ec}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{494af637-adc0-422a-baa4-3e56d80e181b}" />
